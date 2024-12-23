@@ -6,8 +6,8 @@
     <title>College ticket</title>
     <style>
         .ticket-container{
-            width: 800px;
-            height: 400px;
+            width: 80%;
+            height: 90%;
             margin: 50px auto;
             border-radius:20px;
             display: flex;
@@ -17,7 +17,8 @@
         }
         
         .user-part{
-            width:40%;
+            width:50%;
+            height: 50%;
             border-radius: 20px;
             box-shadow: 0 0 15px 2px rgb(0,0,0,0.5);
             border: 2px solid #737373;
@@ -28,7 +29,7 @@
         } 
 
         .event-part{
-            width:60%;
+            width:90%;
             border-radius: 20px;
             box-shadow: 0 0 15px 2px rgb(0,0,0,0.5);
             border: 2px solid #737373;
@@ -39,36 +40,105 @@
         }    
         .ticket-number{
             font-family: 'Courier New', Courier, monospace;
-            padding: 20px;
-
-        }
+         }
         .event-title{
-            font-size: 20px;
+            font-size: 23px;
 
         }
 
         .event-logo{
-            height: 100px;
-            margin-left: 100px;
-            
+            height: 200px;
         }
         .college-name-title{
-            font-size: 10px;
+            font-size: 15px;
 
 
+        }
+        .img{
+            width: 50px;
+            height: 60px;
         }
         
-         /* Mobile */
+        /* Mobile */
         @media (max-width:600px) {
+            .ticket-container{
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                width: 100px;
+            }
+
+            .user-part{
+                width: 300px;
+                border-right: solid;
+                border-bottom: none;
+            }
+            .event-part{
+                width:400px;
+                border-top: dashed;
+                border-left: solid;
+                height: 300px;
+            }
+            .event-title{
+                font-size: 18px;
+            }
+            .event-logo{
+                height: 100px;
             
         }
+    }
 
         /* Table */
         @media (min-width:601px)  and (max-width:800px) {
+            .ticket-container{
+                background-color: tomato;
+            }
+            .ticket-container{
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                width: 100px;
+            }
+
+            .user-part{
+                width: 600px;
+                border-right: solid;
+                border-bottom: none;
+            }
+            .event-part{
+                width:600px;
+                border-top: dashed;
+                border-left: solid;
+                height: 300px;
+            }
+            .event-title{
+                font-size: 20px;
+            }
+            .event-logo{
+                height: 13px;
+            }
         
         }
         /* Laptop */
        @media (min-width:801px)  and (max-width:1024px) {
+       
+            .user-part{
+                width: 300px;
+                
+            }
+            .event-part{
+                width:500px;
+               
+            }
+            .event-title{
+                font-size: 20px;
+            }
+            .event-logo{
+                height: 170px;
+            }
+        
+        
+
        
         }
     </style>
